@@ -1,0 +1,349 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:#0078ff;
+    --backcolor:#cde1f8 ;
+}
+header
+{
+    background-image: url(../images/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+}
+#navbarSupportedContent a{
+    position: relative;
+}
+#navbarSupportedContent a:hover::after{
+    position: absolute;
+        content: '';
+        height: 2px;
+        background-color: #fff;
+        width: 75%;
+        bottom: -2;
+        left: 5px;
+}
+#home-link::after{
+    position: absolute;
+        content: '';
+        height: 2px;
+        background-color: #fff;
+        width: 75%;
+        bottom: -2;
+        left: 5px;
+}
+.home-content h2::after{
+    content: "|";
+    animation: typing infinite 5s;
+}
+@keyframes typing{
+    0%{
+        content:"D|";
+    }
+    2.5%{
+        content:"De";
+    }
+    5%{
+        content:"Dev|";
+    }
+    7.5%{
+        content:"Deve";
+    }
+    10%{
+        content:"Devel|";
+    }
+    12.5%{
+        content:"Develo";
+    }
+    15%{
+        content:"Develop|";
+    }
+    17.5%{
+        content:"Develope";
+    }
+    20%{
+        content:"Developer|";
+    }
+    22.5%{
+        content:"|";
+    }
+    25%{
+        content:"F";
+    }
+    27.5%{
+        content:"Fr|";
+    }
+    30%{
+        content:"Fre";
+    }
+    32.5%{
+        content:"Free|";
+    }
+    35%{
+        content:"Freel";
+    }
+    37.5%{
+        content:"Freela|";
+    }
+    40%{
+        content:"Freelan";
+    }
+    42.5%{
+        content:"Freelanc|";
+    }
+    45%{
+        content:"Freelance";
+    }
+    47.5%{
+        content:"Freelancer|";
+    }
+    50%{
+        content:"|";
+    }
+    52.5%{
+        content:"P";
+    }
+    55%{
+        content:"Ph|";
+    }
+    57.5%{
+        content:"Pho";
+    }
+    60%{
+        content:"Phot|";
+    }
+    62.5%{
+        content:"Photo";
+    }
+    65%{
+        content:"Photog|";
+    }
+    67.5%{
+        content:"Photogr";
+    }
+    70%{
+        content:"Photogra|";
+    }
+    72.5%{
+        content:"Photograp";
+    }
+    75%{
+        content:"Photograph|";
+    }
+    77.5%{
+        content:"Photographe";
+    }
+    80%{
+        content:"Photographer|";
+    }
+    100%{
+        content:"|";
+    }
+}
+#about{
+    background-color: #f1f1f1; 
+}
+.about-me h2{
+    position: relative;
+}
+.about-me h2::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color:var(--maincolor);
+    width: 20%;
+    bottom: -2;
+    left: 0px;
+}
+#about .container{
+    background-color: #f1f1f1;
+}
+.small-container{
+    background-color: #fff;
+}
+.lower{
+    position: relative;
+    background-color: var(--backcolor);
+    height: 10px;
+   
+    
+}
+.upper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background-color: var(--maincolor);
+  
+}
+.about-me p{
+    font-size: 20px;
+    font-weight: 200;
+}
+#services{
+    background-color: #f1f1f1;
+}
+.title p{
+position: relative;
+padding-bottom: 10px;
+}
+.title p::after{
+    position:absolute;
+    content: '';
+    height: 5px;
+    background-color:var(--maincolor);
+    width: 3%;
+    bottom: -2;
+    left: 50%;
+    }
+
+
+.item i{
+    font-size: 30px;
+    padding: 30px;
+   border: 10px var(--maincolor) solid;
+   border-radius: 50%;
+}
+.item:hover i{
+    background-color: var(--maincolor);
+    border: 10px var(--backcolor) solid;
+    color: #fff;
+}
+#calculations{
+background-image: url(../images/counters-bg.jpg);
+background-size: cover;
+background-position: center center;
+}
+.blue-layer{
+    background-color: rgba(0, 120, 255, 0.8);
+    padding: 100px;
+}
+.calc i{
+    color: #fff;
+    border: 10px var(--backcolor) solid;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.port-parts:hover img{
+    transform: scale(1.5,1.5);
+}
+.port-img {
+    overflow: hidden;
+}
+#clients{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.form input,textarea{
+    border: var(--maincolor) 1px solid;
+}
+.details i{
+    color: var(--maincolor);
+}
+.icons i{
+    border: var(--maincolor) solid 5px;
+border-radius: 50%;
+padding: 10px;
+    color: black;
+}
+.word{
+    background-color: var(--maincolor);
+    color: #fff;
+}
+.blog-inner{
+    border: 1px #f1f1f1 solid;
+}
+.blog-inner  a{
+    color: black;
+    transition: color 2s;
+}
+.blog-inner h5:hover a{
+    color: var(--maincolor);
+}
+.small-div a{
+    color: black;
+  transition: color 2s;
+}
+.small-div:hover a{
+color: var(--maincolor);
+}
+.clr{
+    clear: both;
+}
+.contact-container{
+    box-sizing: border-box;
+}
+#copyright{
+    background-color: var(--maincolor);
+}
+.port-title p{
+    position: relative;
+    padding-bottom: 10px;
+}
+.port-title p::after{
+    position: absolute;
+    position:absolute;
+    content: '';
+    height: 5px;
+    background-color:var(--maincolor);
+    width: 3%;
+    bottom: -2;
+    left: 50%;
+}
+.port-inner i{
+    font-size: 30px;
+    color: var(--maincolor);
+}
+.blog-title p{
+position: relative;
+padding-bottom: 10px;
+}
+.blog-title p::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    background-color:var(--maincolor);
+    width: 3%;
+    bottom: -2;
+    left: 50%;
+}
+.details h2{
+    position: relative;
+}
+.details h2::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color:var(--maincolor);
+    width: 20%;
+    bottom: -2;
+    left: 0;
+}
+.form a{
+    color: #fff;
+}
+.form button{
+    background-color: var(--maincolor);
+    border: transparent solid 1px;
+}
+.form button:hover{
+    opacity: 0.5;
+}
